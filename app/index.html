@@ -20,12 +20,26 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+  <ul class="menu">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="#">Школа</a></li>
+    <li><a href="#">Поддержка</a></li>
+    <li><a href="#">Новости</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</div>
 
 <header>
   <div class="header-top">
@@ -67,6 +81,12 @@
               </a>
             </li>
           </ul>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -92,7 +112,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="home-box">
+        <div class="home-box wow animate__animated animate__fadeInLeft">
           <div class="home-box__icon"><img src="img/img1.jpg" alt=""></div>
           <div class="home-box__body">
             <h3>Для получивших </h3>
@@ -109,7 +129,7 @@
           </div>
         </div>
 
-        <div class="home-box">
+        <div class="home-box wow animate__animated animate__fadeInRight">
           <div class="home-box__icon"><img src="img/img2.jpg" alt=""></div>
           <div class="home-box__body">
             <h3>Для предприятий, осуществляющих деятельность
@@ -117,15 +137,15 @@
               но не получавших статус социального предприятия</h3>
             <div class="box-text">
               <ul class="list-dots">
-                <li>Продвижение  в СМИ</li>
-                <li>Акселератор  «Новый уровень»</li>
+                <li>Продвижение в СМИ</li>
+                <li>Акселератор «Новый уровень»</li>
                 <li>Консультации по вступлению в реестр социальных предприятий</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="home-box">
+        <div class="home-box wow animate__animated animate__fadeInLeft">
           <div class="home-box__icon"><img src="img/img3.jpg" alt=""></div>
           <div class="home-box__body">
             <h3>Для любых СМСП и физических лиц, планирующих
@@ -151,17 +171,21 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>Гранты до 500 000<svg class="svg-icon svg-icon-rub"><use xlink:href="img/sprite.svg#rub"></use></svg></h2>
+        <h2 class="wow animate__animated animate__fadeInLeft">Гранты до 500 000
+          <svg class="svg-icon svg-icon-rub">
+            <use xlink:href="img/sprite.svg#rub"></use>
+          </svg>
+        </h2>
 
         <div class="grants-list">
-          <div class="grants-list-item">
+          <div class="grants-list-item wow animate__animated animate__fadeInLeft">
             <div class="grants-list-item__icon">
               <img src="img/icon1.png" alt="">
 
             </div>
             <h3>100 - 500 000</h3>
           </div>
-          <div class="grants-list-item">
+          <div class="grants-list-item wow animate__animated animate__fadeInLeft">
             <div class="grants-list-item__icon">
               <img src="img/icon2.png" alt="">
 
@@ -169,7 +193,7 @@
             <h3>Конкурсный<br>
               отбор</h3>
           </div>
-          <div class="grants-list-item">
+          <div class="grants-list-item wow animate__animated animate__fadeInRight">
             <div class="grants-list-item__icon">
               <img src="img/icon3.png" alt="">
 
@@ -178,27 +202,29 @@
               реализации проекта</h3>
             <p>0% - грант, 50% - предприниматель</p>
           </div>
-          <div class="grants-list-item">
+          <div class="grants-list-item wow animate__animated animate__fadeInRight">
             <div class="grants-list-item__icon">
               <img src="img/icon4.png" alt="">
             </div>
-              <h3>Предоставляется <br>
-                однократно, мониторинг <br>
-                деятельности</h3>
-              <p>3 года</p>
+            <h3>Предоставляется <br>
+              однократно, мониторинг <br>
+              деятельности</h3>
+            <p>3 года</p>
           </div>
         </div>
 
         <div class="education">
-          <h4>Необходимо пройти обучение в рамках
+          <h4 class="wow animate__animated animate__fadeInLeft">Необходимо пройти обучение в рамках
             программ центра «Мой бизнес»</h4>
-          <a href="#" class="btn btn-red">
+          <a href="#" class="btn btn-red wow animate__animated animate__fadeInUp" data-toggle="modal" data-target="#callModal">
             <span class="btn-text">Пройти обучение</span>
-            <svg class="btn-icon svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
+            <svg class="btn-icon svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
           </a>
 
-          <div class="education-img education-img1"><img src="img/people1.png" alt=""></div>
-          <div class="education-img education-img2"><img src="img/people2.png" alt=""></div>
+          <div class="education-img education-img1 wow animate__animated animate__fadeInLeft"><img src="img/people1.png" alt=""></div>
+          <div class="education-img education-img2 wow animate__animated animate__fadeInRight"><img src="img/people2.png" alt=""></div>
         </div>
       </div>
     </div>
@@ -210,15 +236,366 @@
     <div class="row">
       <div class="col-12">
         <h2>На что разрешено потратить грант?</h2>
+        <ul class="permission-list wow animate__animated animate__fadeInLeft">
+          <li>Аренда и ремонт нежилого помещения</li>
+          <li>Аренда и приобретение оргтехники,
+            оборудования
+          </li>
+          <li>Приобретение сырья и материалов</li>
+          <li>Реклама в СМИ и интернете</li>
+          <li>Паушальный взнос</li>
+          <li>Технологическое присоединение к объектам
+            инженерной инфраструктуры
+          </li>
+          <li>Оформление результатов интеллектуальной
+            деятельности
+          </li>
+          <li>Оплата коммунальных услуг и услуг связи</li>
+          <li>Приобретение основных средств</li>
+          <li>Переоборудование транспортных средств для
+            перевозки маломобильных групп населения
+          </li>
+          <li>Приобретение программного обеспечения</li>
+          <li>Уплата первого взноса
+            при заключении договора лизинга
+          </li>
+          <li>Профилактика COVID-19</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
+<section class="permission-not bg-red">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="permission-not-wrapper wow animate__animated animate__fadeInLeft">
+          <p>Покупка машины, <br>
+            земли, здания
+            или сооружения</p>
+          <h2>На что нельзя
+            потратить грант?</h2>
+          <p>Налоги, сборы <br>
+            проценты по займам <br>
+            и кредитам</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="date-contest">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 wow animate__animated animate__fadeInLeft">
+        <h2>Когда проводится конкурс?</h2>
+      </div>
+      <div class="col-12">
+        <div class="home-box wow animate__animated animate__fadeInLeft">
+          <div class="home-box__icon"><img src="img/calendar-icon.png" alt=""></div>
+          <div class="home-box__body">
+            <h3><span>1 раз в год.</span>
+              В 2021 году время проведения октябрь-ноябрь </h3>
+            <div class="box-text">
+              <p>(Положение и все подробности будут опубликованы в данном разделе и на
+                сайте Министерства промышленности, экономики и инновационной
+                политики Пензенской области после объявления конкурса)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="privileges">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="wow animate__animated animate__fadeInLeft">льготные кредиты от</h2>
+
+        <div class="privileges-wrapper">
+          <div class="privileges__val wow animate__animated animate__fadeInLeft">1/2</div>
+          <p class="wow animate__animated animate__fadeInUp">ключевой
+            ставки
+            Банка России</p>
+
+          <div class="privileges-box wow animate__animated animate__fadeInRight">
+            <div class="privileges-icon"><img src="img/money-icon.png" alt=""></div>
+            <a href="#" class="btn btn-red">
+              <span class="btn-text">Подробнее</span>
+              <svg class="btn-icon svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="consultation">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-30 wow animate__animated animate__fadeInLeft">
+        <div class="consultation-box">
+          <h3>консультации по вступлению
+            в реестр социальных
+            предприятий</h3>
+          <div class="box-text">
+            <p>Бесплатные консультации осуществляет
+              руководитель Центра инноваций
+              социальной сферы </p>
+          </div>
+
+          <h4>Бахтеева Марьям Рауфовна</h4>
+
+          <div class="consultation-contacts bg-blue">
+            <p>по телефону</p>
+            <a href="tel:+78412221858" class="phone-call consultation-contacts__info">+7 (8412) 22-18-58</a>
+          </div>
+
+          <div class="consultation-contacts bg-blue">
+            <p>в центре «Мой бизнес» по адресу </p>
+            <div class="consultation-contacts__info">г. Пенза, ул. Герцена, 14</div>
+          </div>
+
+          <a href="#" class="btn btn-red" data-toggle="modal" data-target="#callModal">
+            <span class="btn-text">Записаться на прием</span>
+            <svg class="btn-icon svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 mb-30 wow animate__animated animate__fadeInRight">
+        <div class="consultation-box">
+          <h3>консультации по вопросам
+            государственной поддержки
+            социальных предприятий</h3>
+          <div class="box-text">
+            <p>Бесплатные консультации осуществляет
+              руководитель Центра инноваций
+              социальной сферы </p>
+          </div>
+
+          <h4>Бахтеева Марьям Рауфовна</h4>
+
+          <div class="consultation-contacts bg-blue">
+            <p>по телефону</p>
+            <a href="tel:+78412221858" class="phone-call consultation-contacts__info">+7 (8412) 22-18-58</a>
+          </div>
+
+          <div class="consultation-contacts bg-blue">
+            <p>в центре «Мой бизнес» по адресу </p>
+            <div class="consultation-contacts__info">г. Пенза, ул. Герцена, 14</div>
+          </div>
+
+          <a href="#" class="btn btn-red" data-toggle="modal" data-target="#callModal">
+            <span class="btn-text">Записаться на прием</span>
+            <svg class="btn-icon svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews bg-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 wow animate__animated animate__fadeInLeft">
+        <h2>бесплатное обучение</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-30 wow animate__animated animate__fadeInLeft">
+        <div class="reviews-box">
+          <div class="date">19.03.2020</div>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetuer
+              adipiscing elit, sed diam nonummy nibh
+              euismod tincidunt ut laoreet dolore</p>
+          </div>
+          <a href="#" class="btn btn-accent">
+            <span class="btn-text">Подробнее</span>
+            <svg class="btn-icon svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 mb-30 wow animate__animated animate__fadeInUp">
+        <div class="reviews-box">
+          <div class="date">19.03.2020</div>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetuer
+              adipiscing elit, sed diam nonummy nibh
+              euismod tincidunt ut laoreet dolore</p>
+          </div>
+          <a href="#" class="btn btn-accent">
+            <span class="btn-text">Подробнее</span>
+            <svg class="btn-icon svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 mb-30 wow animate__animated animate__fadeInRight">
+        <div class="reviews-box">
+          <div class="date">19.03.2020</div>
+          <div class="box-text">
+            <p>Lorem ipsum dolor sit amet, consectetuer
+              adipiscing elit, sed diam nonummy nibh
+              euismod tincidunt ut laoreet dolore</p>
+          </div>
+          <a href="#" class="btn btn-accent">
+            <span class="btn-text">Подробнее</span>
+            <svg class="btn-icon svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="consultation consultation-two">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="consultation-box">
+          <div class="title-line">
+            <h3 class="wow animate__animated animate__fadeInLeft">консультации по экономическим вопросам</h3>
+
+            <a href="#" class="btn btn-red wow animate__animated animate__fadeInRight">
+              <span class="btn-text">bc-expert.pro</span>
+              <svg class="btn-icon svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="consultation-box__col wow animate__animated animate__fadeInLeft">
+            <div class="box-text">
+              <p>Бесплатные консультации по вопросам финансового планирования
+                (бюджетирование, оптимизация налогообложения, бухгалтерские услуги,
+                привлечение инвестиций и займов) осуществляет партнер
+                Центра инноваций социальной сферы</p>
+            </div>
+
+            <h4>Бизнес-центр «Эксперт»</h4>
+            <p>Консультации проводит генеральный директор</p>
+            <h4>Лазарева Олеся Сергеевна</h4>
+            <p>действительный член Международной федерации бухгалтеров</p>
+
+          </div>
+          <div class="consultation-contacts__col wow animate__animated animate__fadeInRight">
+            <div class="consultation-contacts bg-blue">
+              <span>Запись по телефонам:</span>
+              <p>8-906-158-56-11, 8-927-289-16-63,
+                8 (8412) 30-41-91</p>
+            </div>
+
+            <div class="consultation-contacts bg-blue">
+              <span>Адрес:</span>
+              <p>г.Пенза, ул. Каляева, д.7, офис 310</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex align-items-center flex-wrap">
+        <div class="header-box">
+          <div class="name-company">ЦЕНТР ИННОВАЦИЙ СОЦИАЛЬНОЙ СФЕРЫ
+            ЦЕНТРА КЛАСТЕРНОГО РАЗВИТИЯ
+          </div>
+        </div>
+        <div class="header-contacts">
+          <a href="mailto:ciss@ckr58.ru" class="mail">ciss@ckr58.ru</a>
+          <a href="tel:+78412458477" class="phone">+7(8412)45-84-77</a>
+        </div>
+        <ul class="list-social">
+          <li>
+            <a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Записаться на прием</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label>
+            <input type="text" name="name" placeholder="Ф.И.О.">
+          </label>
+          <label>
+            <input type="text" name="mail" placeholder="E-mail" required>
+          </label>
+          <label>
+            <input type="text" name="phone" placeholder="Телефон">
+          </label>
+          <button type="submit" class="btn btn-red">
+            <span class="btn-text">Отправить</span>
+            <svg class="btn-icon svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.3.1/jquery.maskedinput.min.js"
+        integrity="sha512-D30F0yegJduD5FxOxI3qM1Z0YrbtXE3YLoyNDYvps4Qq63Y0l/ObPmjlsj27pgFx8mLdMQ24I3gGtdYZO741HQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
